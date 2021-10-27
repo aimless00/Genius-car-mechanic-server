@@ -68,6 +68,10 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Hitting the Server')
 })
+
+app.get('/hellow', (req, res) => {
+    res.send('Hellow heroku')
+})
 app.listen(port, () => {
     console.log('Running Genius Server on Port', port);
 })
